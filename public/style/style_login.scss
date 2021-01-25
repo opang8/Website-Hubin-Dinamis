@@ -1,0 +1,402 @@
+body{
+  color: #595959;
+  font-family: 'Poppins', sans-serif;
+  
+}
+h4 {
+  font-family: 'Merriweather', serif;
+  font-weight: 400;
+  font-size: 35px;
+  color: #33317F;
+}
+
+.partikel1 {
+  content: '';
+  position: absolute;
+  margin-top: -20%;
+  margin-left: 20%;
+  animation: partikel1 5s infinite;
+}
+
+.partikel2 {
+  content: '';
+  position: absolute;
+  margin-top: -10%;
+  margin-left: 55%;
+  animation: partikel2 5s infinite;
+}
+
+.partikel3 {
+  content: '';
+  position: absolute;
+  margin-top: 40%;
+  margin-left: 40%;
+  animation: partikel3 5s infinite;
+}
+
+@keyframes partikel1 {
+  0%   {transform: rotate(0deg);}
+  50%  {transform: rotate(150deg);}
+  100% {transform: rotate(0deg);}
+ 
+}
+
+@keyframes partikel2 {
+  0%   {transform: rotate(0deg);}
+  50%  {transform: rotate(-150deg);}
+  100% {transform: rotate(0deg);}
+
+}
+
+@keyframes partikel3 {
+  0%   {left: -30px; transform: rotate(0deg);}
+  50%  {left: 10px; transform: rotate(-200deg);}
+  100% {left: -30px; transform: rotate(0deg);}
+ 
+}
+h2 {
+        
+  font-family: 'Merriweather', serif;
+  font-weight: 500;
+  font-size: 45px;
+  color: #33317F;
+}
+h3 {
+        
+  font-family: 'Merriweather', serif;
+  font-weight: 300;
+  font-size: 37px;
+  color: #33317F;
+}
+.navbar-brand{
+  img{
+      width: 90px;
+      transition: .4s ease-in-out;
+  }
+}
+
+.navbar{
+background: transparent !important;
+transition: 0.5s;
+}
+.navbar.scrolled{
+background: white !important;
+transition: 0.5s;
+  box-shadow: 0px 3px #26DCA2;
+  .navbar-brand{
+      img{
+          width: 80px;
+      }
+  }
+}
+
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+  
+  color: #26DCA2;
+  
+}
+
+.navbar-light .navbar-nav .active>.nav-link:hover {
+color: #000;
+}
+
+.navbar-light .navbar-nav .nav-link
+{
+  color: #33317F;
+}
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link:focus
+{
+  
+  color: #26DCA2;
+}
+.navbar-light .navbar-brand,
+.navbar-light .navbar-brand:hover,
+.navbar-light .navbar-brand:focus,
+.navbar-light .navbar-brand:visited
+{
+  color: #33317F;
+  font-size: 1rem;
+  font-weight: 300;
+}
+form {
+    font-family: 'poppins', sans-serif;
+    font-size: 20px;
+    color: #18165D;
+    font-weight: 600;
+
+    
+
+    .form-control{
+        background: transparent;
+        border:none;
+        border-bottom: 2px solid #18165db1;
+        border-radius: 0px;
+        background: #F8FFFD;
+        font-size: 1rem;
+    }
+    .form-control:focus,
+    .form-control:hover{
+        border:none;
+        border-bottom: 2px solid #18165D;
+        box-shadow: none;
+        background: #F8FFFD;
+    }
+     
+    .text__radio{
+        font-size: 20px;
+        font-weight: 400;
+    }
+
+    label {
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+    
+    .small_text{
+      font-size: 14px;
+      font-weight: 400;
+      color: #000000;
+    }
+
+
+    .container {
+        display: block;
+        position: relative;
+        padding-left: 35px;
+        margin-bottom: 12px;
+        cursor: pointer;
+        font-size: 22px;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+      
+      /* Hide the browser's default radio button */
+      .container input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+      }
+      
+      /* Create a custom radio button */
+      .checkmark {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 25px;
+        width: 25px;
+        background-color: #eee;
+        border-radius: 50%;
+      }
+      
+      /* On mouse-over, add a grey background color */
+      .container:hover input ~ .checkmark {
+        background-color: #ccc;
+      }
+      
+      /* When the radio button is checked, add a blue background */
+      .container input:checked ~ .checkmark {
+        background-color: #26DCA2;
+      }
+      
+      /* Create the indicator (the dot/circle - hidden when not checked) */
+      .checkmark:after {
+        content: "";
+        position: absolute;
+        display: none;
+      }
+      
+      /* Show the indicator (dot/circle) when checked */
+      .container input:checked ~ .checkmark:after {
+        display: block;
+      }
+      
+      /* Style the indicator (dot/circle) */
+      .container .checkmark:after {
+           top: 9px;
+          left: 9px;
+          width: 8px;
+          height: 8px;
+          border-radius: 50%;
+          background: white;
+      }
+    
+}
+
+.register__login {
+    font-size: 40px;
+    color: #1D293F;
+    font-weight: 700;
+    margin-bottom: 30px;
+    border-left: 15px solid #26DCA2;
+
+    .text__register{
+        margin-left: 20px;
+        font-family: 'Merriweather';
+    }
+}
+
+
+//success
+.section-success {
+  margin-top: 5vh;
+
+
+  h1 {
+      font-weight: 600;
+      font-size: 26px;
+      color: #071c4d;
+  }
+
+  p {
+       font-weight: 300;
+       font-size: 18px;
+       color: #b1b1b1;
+
+  }
+
+  .btn-home-page {
+      border-radius: 4px;
+      background-color: #071c4d;
+      color: white;
+
+      &:hover {
+          color: white;
+          background-color: #2a488e;
+
+      }
+  }
+
+
+}
+
+.btn-resume {
+  color: white;
+  background: #17c08b;
+  color:white;
+  width:100%;
+  padding:15px;
+  transition: .2s ease-in-out;
+  &:hover {
+      color: white;
+      background: #34F5B8;
+  }
+}
+
+
+.box-content {
+  margin-top: -180px;
+  background: #fff;
+  overflow: auto;
+  width: 100%;
+  border: 1px solid#e1e1e1;
+  padding: 30px;
+  border-radius: 7px;
+}
+
+.kotak-atas {
+  width: 100%;
+  height: 360px;
+  background: #DCFAF1;
+}
+
+
+.section-footer{
+  color:#071c4d !important;
+  a {
+      padding: 0.2em 1em;
+      color:#071c4d;
+      width: 200px !important;
+      &:hover,&:focus{
+          color: #26DCA2;
+          &::before{
+              font-family: 'Font Awesome 5 Free';
+              content: '\f35d';
+              font-weight: 600;
+          }
+      }
+  }
+
+  span {
+      padding: 0.2em 1em;
+      color:#071c4d;
+      width: 200px !important;
+      &:hover{
+          color: #26DCA2;
+      }
+  }
+  
+  .text-maps{
+      margin-top: 5px;
+      color: #A1A1A1;
+  }
+  .btn-link{
+      color: #18165D;
+      &:hover,&:focus {
+          color: #26DCA2;
+      }
+  }
+  .btn-link:focus,
+  .btn-link:hover{
+      box-shadow: none;
+  }
+
+} 
+
+.card__work{
+  margin-top: -180px;
+  border: 1px solid #e5e5e5;
+  border-radius: 4px;
+  height: 400;
+  background: #ffffff;
+  width: 100%;
+  transition: .2s ease-in-out;
+   &:hover {
+    box-shadow: 2px 14px 22px -2px rgba(0,0,0,.1);
+   }
+  p{
+      font-size: 14px;
+      color: #8C97AC;
+          .button__off {
+          background: #FEF2DE;
+          float: right;
+          color: #F5A623;
+          border-radius: 5px;
+          }
+  }
+  h5 {
+      font-size: 27px;
+      margin-top: 22px;
+      margin-top: 3rem;
+      font-weight: 600;
+      color: #1D293F;
+      margin-bottom: 88px;
+  }
+
+  .posted__by {
+      color: #B9B9B9;
+      font-size: 13px;
+  }
+
+  .nama__perusahaan {
+      font-size: 16px;
+      font-weight: 600;
+      color: #1D293F;
+      margin-left: 11px;
+  }
+
+}
+
+ @media only screen and (max-width: 768px){
+   .card__work {
+     margin-top: 10px;
+   }
+
+   .text-header {
+     h3{
+       margin-top: 60px;
+     }
+   }
+ }
